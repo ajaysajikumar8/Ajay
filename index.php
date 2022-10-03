@@ -20,7 +20,7 @@
         <h1>I'm Ajay</h1>
         <h2 class="description-heading">A programmer</h2> 
         <img class="bottom-cloud" src="images/cloud.png" alt="cloud-img">
-        <img class="mountain" src="images/mountain.png" alt="mountain-img">
+        <img class="mountain" src="images/mountain.png" alt="mountain-img"> 
     </div>
     <div class="middle-container">
         <div class="profile">
@@ -51,7 +51,18 @@
             <h2>Get In Touch</h2>
             <h3>If you love coding and MCU.</h3>
             <p class="contact-me-desc">Lets talk about coding and how awesome the Marvel Cinematic Universe are</p>
-            <a class="btn" href="mailto:ajaysajikumar8@gmail.com">CONTACT ME</a>
+            <?php include "data_insert.php" ?>
+            <div class="contact-form">
+            <form action="" method="POST">
+                <label for="name">Your Name: </label><br>
+                <input type="text" name="name" id="name"><br><br>
+                <label for="email" id="email">Your Email: </label><br>
+                <input type="text" name="email"><br><br>
+                <label for="message">Your Message: </label><br>
+                <textarea type="text" name="message" id="message"></textarea><br><br>
+                <input class="btn" type="submit" name="submit">
+            </form>
+            </div>
         </div>
     </div>
 
